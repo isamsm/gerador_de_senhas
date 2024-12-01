@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title> Gerador de Senhas</title>
+</head>
+<body>
+    <div id="page">
+        <h1 id="title"> Gerador de senhas </h1>
+        <img src="/image.png" alt="Imagem dado" width="300" height="300"/>
+        <div id="buttons">
+            <button id="random_btn" onclick="generateRandom(this)"> Gerar senha aleatória </button>
+            <button id="personalized_btn" onclick="generatePersonalizedDiv(this)"> Gerar senha personalizada </button>
+        </div>
+        <div id="personalized_pass">
+            <form id="personalized_form">
+                <div id="div_word">
+                    <label for="word"> Palavra de sua preferência </label>
+                    <input required id="word" type="text" onkeypress="return event.charCode != 32"/>
+                </div>
+                <div id="div_size">
+                    <label for="size"> Tamanho de sua senha </label>
+                    <input required id="size" type="number" min="10" max="20"/>
+                </div>
+                <button> Gerar senha </button>
+            </form>
+        </div>
+        <div id="pass_div">
+            <div id="password"></div>
+            <button onclick="copyPass()" id="pass_div"> Copiar </button>
+        </div>
+        <p id="alert"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
