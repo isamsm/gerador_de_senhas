@@ -6,14 +6,14 @@
     <title> Gerador de Senhas</title>
 </head>
 <body>
-    <div id="page">
+    <main id="page">
         <h1 id="title"> Gerador de senhas </h1>
         <img src="/image.png" alt="Imagem dado" width="300" height="300"/>
-        <div id="buttons">
+        <section id="buttons">
             <button id="random_btn" onclick="generateRandom(this)"> Gerar senha aleatória </button>
             <button id="personalized_btn" onclick="generatePersonalizedDiv(this)"> Gerar senha personalizada </button>
-        </div>
-        <div id="personalized_pass">
+        </section>
+        <section id="personalized_pass">
             <form id="personalized_form">
                 <div id="div_word">
                     <label for="word"> Palavra de sua preferência </label>
@@ -25,13 +25,13 @@
                 </div>
                 <button> Gerar senha </button>
             </form>
-        </div>
-        <div id="pass_div">
+        </section>
+        <section id="pass_div">
             <div id="password"></div>
             <button onclick="copyPass()" id="pass_div"> Copiar </button>
-        </div>
+        </section>
         <p id="alert"></p>
-    </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
